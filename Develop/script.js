@@ -124,15 +124,15 @@ else if (lowerConfirm) {
   console.log(userChoices);
 }
 // Random selection
-var passwordBlank = [];
+
 
 for (var i = 0; i < passwordLength; i++) {
   var choices = userChoices[Math.floor(Math.random() * userChoices.length)];
-  passwordBlank.push(choices);
+  
   console.log(choices);
 }
 
-var password = passwordBlank.join("");
+var password = choices.join("");
 console.log("Your password is: " + password);
 return password;
 }
