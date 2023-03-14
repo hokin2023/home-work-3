@@ -7,6 +7,7 @@ var numberConfirm;
 var specialConfirm;
 var userChoices;
 
+
 // characters
 var lowerCaseL = ["a", "b", "c", "d", "e", "f",  "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numberArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -124,15 +125,19 @@ else if (lowerConfirm) {
   console.log(userChoices);
 }
 // Random selection
-
+var final = [gi];
 
 for (var i = 0; i < passwordLength; i++) {
-  var choices = userChoices[Math.floor(Math.random() * userChoices.length)];
+  var finish = userChoices[Math.floor(Math.random() * userChoices.length)];
+final.push(finish);
+  console.log(finish);
+
   
-  console.log(choices);
 }
 
-var password = choices.join("");
+
+
+var password = final.join("");
 console.log("Your password is: " + password);
 return password;
 }
