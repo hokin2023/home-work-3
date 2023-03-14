@@ -125,7 +125,7 @@ else if (lowerConfirm) {
   console.log(userChoices);
 }
 // Random selection
-var final = [gi];
+var final = [];
 
 for (var i = 0; i < passwordLength; i++) {
   var finish = userChoices[Math.floor(Math.random() * userChoices.length)];
